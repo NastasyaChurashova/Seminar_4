@@ -1,15 +1,33 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+//**********1 - Iterator
+//Создать класс УчебнаяГруппа Итератор, заставив его реализовать интерфейс Iterator
+// Реализовать его контракты (включая удаление)
+
+//**********2 - Iterable
+//Модифицировать класс УчебнаяГруппа, заставив его реализовать интерфейс Iterable
+// Реализовать метод Iterator() возвращающий экземпляр созданного ами итератора
+// Создать класс УчебнаяГруппа Сервис, добавив в него метод удаления студента по ФИО
+//Создать класс Контроллер, добавив в него метод удаления студента и вызывать в нем созданный метод из УчебнаяГруппаСЕрвис
+
+//**********3 - Comparable
+//Модифицировать класс Студент, заставив его реализовать интерфейс Comparable
+// Реализовать контракт CompareTo() со сравнением по какому-либо параметру (пример Student Id)
+// Модифицировать класс УчебнаяГруппаСервис, добавив в него метод сортировки списка студентов по Id
+// Модифицировать класс Контроллер, добавив в него метод сортировки списка студентов по id и вызывать в нем
+// созданный метод из УчебнаяГруппаСервис
+
+//**********4 - Comparator
+// Создать класс СтудентКомпаратор реализующий интерфейс Comparator
+// Реализовать контракт Compare со сравнением по какому-либо параметру (пример сочетание имя-фамилия)
+// Модифицировать класс УчебнаяГруппаСервис, добавив в него метод сортировки списка студентов по ФИО
+// Модифицировать класс Контроллер, добавив в него метод сортировки списка студентов по ФИО и вызывать в нем
+// созданный метод из УчебнаяГруппаСервис
+
+
 public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
     }
 }
