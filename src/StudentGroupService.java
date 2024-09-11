@@ -3,18 +3,23 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-public class StudentGroupService {
+public class StudentGroupService extends UserService<Student>{
 
     private StudentGroup studentGroup;
 
-    public void removeStudentByFIO(String firstName, String lastName, String middleName){
-        Iterator<Student> iterator = studentGroup.iterator();
-        while (iterator.hasNext()){
+    public void removeStudentByFIO(String firstName, String lastName, String middleName) {
+        Iterator<Student> iterator = users.iterator();
+        while (iterator.hasNext()) {
             Student student = iterator.next();
-            if (student.getFirstName().equals(firstName) && student.getLastName().equals(lastName) && student.getMiddleName().equals(middleName)){
+            if (student.getFirstName().equals(firstName) && student.getLastName().equals(lastName)
+                    && student.getMiddleName().equals(middleName)) {
                 iterator.remove();
             }
         }
+    }
+
+    public List<Student> getStudentList() {
+        return users;
     }
 
     public List<Student> getSortedStudentList(){
@@ -25,7 +30,8 @@ public class StudentGroupService {
 
     public List<Student> getSortedStudentByFIO(){
         List<Student> studentList = new ArrayList<>(studentGroup.getStudentList());
-        studentList.sort(new StudentComparator());
+        studentList.sort(new UserComparator<Student>());
         return studentList;
     }
+
 }
