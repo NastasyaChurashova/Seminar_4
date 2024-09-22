@@ -43,4 +43,16 @@ public class UserService <T extends User>{
             }
         }
     }
+
+    public List<T> getUserList() {
+        return users;
+    }
+
+    public List<Student> getSortedStudentList() {
+        return (List<Student>) users;
+    }
+
+    public List<Student> getSortedStudentByFIO() {
+        return (List<Student>) users;
+    }
 }

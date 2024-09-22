@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -18,20 +16,7 @@ public class StudentGroupService extends UserService<Student>{
         }
     }
 
-    public List<Student> getStudentList() {
+    public List<Student> getUserList() {
         return users;
     }
-
-    public List<Student> getSortedStudentList(){
-        List<Student> studentList = new ArrayList<>(studentGroup.getStudentList());
-        Collections.sort(studentList);
-        return studentList;
-    }
-
-    public List<Student> getSortedStudentByFIO(){
-        List<Student> studentList = new ArrayList<>(studentGroup.getStudentList());
-        studentList.sort(new UserComparator<Student>());
-        return studentList;
-    }
-
 }

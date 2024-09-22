@@ -4,24 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd23f86-ee00-488e-99b5-0f500dcafa54" name="Changes" comment="Seminar_3 Task_3">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StudentView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TeacherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TeacherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TeacherView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserView.java" afterDir="false" />
+    <list default="true" id="5bd23f86-ee00-488e-99b5-0f500dcafa54" name="Changes" comment="Seminar_3 Task_4">
+      <change afterPath="$PROJECT_DIR$/src/ComparatorSortStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DefaultSortStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IStudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ITeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ITeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SortStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StudentSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TeacherSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StudentComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StudentGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StudentGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentGroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeacherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,26 +34,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "NastasyaChurashova"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NastasyaChurashova&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/NastasyaChurashova/Seminar_3.git",
-    "accountId": "7e835ebd-5cd0-4a64-8e76-650141071bb6"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NastasyaChurashova/Seminar_3.git&quot;,
+    &quot;accountId&quot;: &quot;7e835ebd-5cd0-4a64-8e76-650141071bb6&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -67,13 +70,14 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/NASTASYA/FRONTEND/IT courses/GeekBrains/Materials/ОСНОВЫ/ООП/Seminar_4",
     "onboarding.tips.debug.path": "C:/NASTASYA/FRONTEND/IT courses/GeekBrains/Materials/ОСНОВЫ/ООП/Seminar_3/src/Main.java"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Seminar_3" />
+      <module name="Seminar_4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725836588790</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Seminar_3 Task_4">
+      <option name="closed" value="true" />
+      <created>1726091676175</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726091676175</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,7 +129,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Seminar_3 Task_3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seminar_3 Task_3" />
+    <MESSAGE value="Seminar_3 Task_4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seminar_3 Task_4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

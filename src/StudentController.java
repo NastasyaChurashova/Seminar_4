@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class StudentController implements UserController<Student>{
+public class StudentController implements IStudentController{
 
     private final StudentGroupService studentGroupService = new StudentGroupService();
 
@@ -8,9 +8,19 @@ public class StudentController implements UserController<Student>{
 
     private final StudentView studentView = new StudentView();
 
+    @Override
+    public void createStudent(String firstName, String lastName, String middleName) {
+
+    }
+
+    @Override
+    public void editStudentByFIO(String firstName, String lastName, String middleName, String newFirstName, String newLastName, String newMiddleName) {
+
+    }
+
     public void removeStudentByFIO(String firstName, String lastName, String middleName){
         studentGroupService.removeStudentByFIO(firstName, lastName, middleName);
-        List<Student> students = studentGroupService.getStudentList();
+        List<Student> students = studentGroupService.getUserList();
         studentView.sendOnConsole(students);
     }
 
@@ -33,7 +43,7 @@ public class StudentController implements UserController<Student>{
     @Override
     public void create(String firstName, String lastName, String middleName) {
         studentGroupService.create(firstName, lastName, middleName);
-        List<Student> students = studentGroupService.getStudentList();
+        List<Student> students = studentGroupService.getUserList();
         studentView.sendOnConsole(students);
     }
 
@@ -42,11 +52,11 @@ public class StudentController implements UserController<Student>{
                               String newFirstName, String newLastName, String newMiddleName) {
         studentGroupService.editUserByFIO(firstName, lastName, middleName,
                 newFirstName, newLastName, newMiddleName);
-        List<Student> students = studentGroupService.getStudentList();
+        List<Student> students = studentGroupService.getUserList();
         studentView.sendOnConsole(students);
     }
 
     public List<Student> getAllStudents() {
-        return studentGroupService.getStudentList();
+        return studentGroupService.getUserList();
     }
 }

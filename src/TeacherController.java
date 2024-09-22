@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class TeacherController implements UserController<Teacher>{
+public class TeacherController implements ITeacherController {
 
     private final TeacherService teacherService = new TeacherService();
 
@@ -20,6 +20,16 @@ public class TeacherController implements UserController<Teacher>{
                 newFirstName, newLastName, newMiddleName);
         List<Teacher> teachers = teacherService.getAllTeachers();
         teacherView.sendOnConsole(teachers);
+    }
+
+    @Override
+    public void createTeacher(String firstName, String lastName, String middleName) {
+
+    }
+
+    @Override
+    public void editTeacherByFIO(String firstName, String lastName, String middleName, String newFirstName, String newLastName, String newMiddleName) {
+
     }
 
     public List<Teacher> getAllTeachers() {
